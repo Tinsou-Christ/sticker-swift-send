@@ -1,0 +1,33 @@
+# Renomme ce fichier en `config.toml` puis remplis les valeurs.
+# Ne commite JAMAIS `config.toml` sur GitHub (il est déjà dans .gitignore).
+
+[telegram]
+# Token de ton bot obtenu via @BotFather sur Telegram
+token = "123456:PUT-YOUR-BOT-TOKEN-HERE"
+
+# Liste des user_id Telegram autorisés en tant qu'admins (récupère le tien via @userinfobot)
+admins = [123456789]
+
+# Mets `true` pour restreindre l'utilisation du bot aux seuls admins listés ci-dessus
+admins_only = false
+
+# Nombre de workers (threads) pour traiter les updates en parallèle
+workers = 4
+
+# Sauvegarder les données temporaires des conversations entre redémarrages
+persistent_temp_data = true
+
+[bot]
+sourcecode = "https://github.com/your-username/your-repo"
+issues = "https://github.com/your-username/your-repo/issues"
+
+[sqlite]
+filename = "stickersbot.db"
+
+[pyrogram]
+# Optionnel : permet de récupérer TOUS les emojis d'un sticker (pas juste le principal).
+# Laisse `enabled = false` si tu ne sais pas quoi mettre.
+# Pour l'activer : https://docs.pyrogram.org/intro/quickstart#get-pyrogram-real-fast
+enabled = false
+api_id = 0
+api_hash = ""
