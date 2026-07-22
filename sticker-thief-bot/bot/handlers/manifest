@@ -1,0 +1,17 @@
+start
+
+# conversations first
+add_create
+stickers.remove
+stickers.tocustomemoji
+stickers.tofile
+packs.readd
+packs.export
+packs.import_pack
+
+packs.create # CallbackQuery handler for the pack type keyboard
+packs.cleanup
+packs.list
+packs.count
+forgetme
+cancel_no_conversation
